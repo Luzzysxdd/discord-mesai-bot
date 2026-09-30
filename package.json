@@ -1,0 +1,54 @@
+{
+  "name": "discord-mesai-bot",
+  "version": "2.0.0",
+  "description": "Discord Mesai & Vardiya Yönetim Botu (FiveM & Roleplay Toplulukları İçin) - Discord.js v14 Tabanlı Profesyonel Yönetim Sistemi",
+  "main": "bot.js",
+  "type": "module",
+  "author": {
+    "name": "Luzzysxdd",
+    "url": "https://github.com/Luzzysxdd"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Luzzysxdd/discord-mesai-bot.git"
+  },
+  "homepage": "https://github.com/Luzzysxdd/discord-mesai-bot#readme",
+  "license": "Custom-Attribution-NonCommercial",
+  "private": false,
+  "scripts": {
+    "start": "node bot.js",
+    "dev": "nodemon bot.js",
+    "deploy-commands": "node scripts/deploy-commands.js",
+    "prod": "pm2 start ecosystem.config.js --name mesai-bot",
+    "prod-stop": "pm2 stop mesai-bot",
+    "prod-restart": "pm2 restart mesai-bot",
+    "prod-logs": "pm2 logs mesai-bot",
+    "prod-monit": "pm2 monit"
+  },
+  "keywords": [
+    "discord",
+    "bot",
+    "mesai",
+    "vardiya",
+    "fivem",
+    "roleplay",
+    "shift-tracker",
+    "management",
+    "discordjs-v14",
+    "luzzysxdd"
+  ],
+  "dependencies": {
+    "discord.js": "^14.13.0",
+    "dotenv": "^16.3.1",
+    "quick.db": "^9.1.7",
+    "pm2": "^5.3.0",
+    "moment": "^2.29.4",
+    "moment-timezone": "^0.5.45"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.1"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
